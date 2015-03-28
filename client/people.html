@@ -1,0 +1,18 @@
+<template name="people">
+<div id="people">
+	<h1>The App Design Community</h1>
+<table class="table table-striped table-bordered">
+	{{#each profiles}}
+		{{> profileRow}}
+	{{/each}}
+</table>
+</div>
+</template>
+		
+<template name="profileRow">
+<tr>
+	<td> <img src="{{photo}}" width="100"></td>
+	<td><b>{{firstName}} {{lastName}}</b></td>
+	<td> {{bio}}</td>
+</tr>
+</template>
