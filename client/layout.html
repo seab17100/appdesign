@@ -1,0 +1,14 @@
+<template name="layout">
+	<div class="container">
+		<h1><a href="#">Brandeis App Design Bootcamp</a><br/> Summer 2015</h1>
+                        
+		<nav class="navbar navbar-default">
+			<ul class="nav nav-tabs">
+				<li role="presentation"><a href="{{pathFor 'welcome'}}">Home</a></li>
+				<li role="presentation"><a href="{{pathFor 'schedule'}}">Schedule</a></li>
+				<li role="presentation"><a href="{{pathFor 'map'}}">Map</a></li>
+			</ul>
+		</nav>
+		{{> yield}}
+	</div>
+</template>
