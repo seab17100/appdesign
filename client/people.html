@@ -11,8 +11,7 @@
 		
 <template name="profileRow">
 <tr>
-	<td> <img src="{{photo}}" width="100"></td>
-	<td><b>{{firstName}} {{lastName}}</b></td>
-	<td> {{bio}}</td>
+	<td> <a href="{{pathFor 'profile'}}"><img src="{{photo}}" width="100" class="profile-photo"></a></td>
+	<td class="align-left"><b>{{firstName}} {{lastName}}</b></td>
 </tr>
 </template>
