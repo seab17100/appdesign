@@ -19,3 +19,7 @@ and try to get it to work on Mac (it would be nice to have it in the app stores!
 I should also create a minimal viable product for my TYP teams ... and let them understand the products
 enough to modify them ...
 
+Resources:
+* Bootstrap for EditProfile page http://www.bootply.com/sY7gQy6XF7
+* W3Schools for bootstrap http://www.w3schools.com/bootstrap/default.asp
+* TutorialPoint http://www.tutorialspoint.com/bootstrap/bootstrap_forms.htm
