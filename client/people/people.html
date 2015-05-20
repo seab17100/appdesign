@@ -2,20 +2,24 @@
 <div id="people">
 	<h1>The App Design Community</h1>
 	{{#if currentUser}}
-<table class="table table-striped table-bordered">
-	{{#each profiles}}
-		{{> profileRow}}
-	{{/each}}
-</table>
-{{else}}
-<h2>You must be logged in to see the user profiles</h2>
-{{/if}}
+		<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th class="col-md-1">Gravatar</th>
+					<th class="col-md-11">Profile info</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each profiles}}
+					{{> profileRow}}
+				{{/each}}
+			</tbody>
+		</table>
+	{{else}}
+		<h2>You must be logged in to see the user profiles</h2>
+	{{/if}}
+	
+
 </div>
 </template>
 		
-<template name="profileRow">
-<tr>
-	<td> <a href="{{pathFor 'profile'}}"><img src="{{photo}}" width="100" class="profile-photo"></a></td>
-	<td class="align-left"><b>{{firstName}} {{lastName}}</b></td>
-</tr>
-</template>

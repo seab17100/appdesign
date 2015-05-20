@@ -1,5 +1,5 @@
 Template.people.helpers({
-	profiles: function(){ return Profiles.find({});}
+	profiles: function(){ return Meteor.users.find({});}
 })
 
 Template.people.events({
