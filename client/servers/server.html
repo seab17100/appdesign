@@ -1,0 +1,34 @@
+<template name="server">
+	<div class="row">
+		<div class="col-md-6 bg-warning">
+			<h1>Reset all IP addresses</h1>
+			<button id="resetIP" class="btn btn-large">Reset</button>
+		</div>
+		<div class="col-md-6 bg-info">
+			<h1>Add a new IP Address</h1>
+			<form id="serverInfo">
+				Name: <input type="text" name="name" id="servername"> <br/>
+				IP address: <input type="text" name="ip" id = "ip"><br/>
+				<input type="submit">
+			</form>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 bg-info">
+			<h2>All IP Addresses</h2>
+			<table class="table table-hover table-bordered" id="iptable">
+				<tbody>
+					{{#each ipaddresses}}
+						{{> iprow}}
+					{{/each}}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</template>
+
+<template name="iprow">
+<tr><td>{{name}}</td><td><a href="http://{{ip}}:3000">{{ip}}</a></td>
+  <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td></tr>
+</template>
