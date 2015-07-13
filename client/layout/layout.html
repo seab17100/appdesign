@@ -23,7 +23,9 @@
 					<li><a href="{{pathFor 'map'}}">Map</a></li>
 					<li><a href="{{pathFor 'about'}}">About</a></li>
 					<li><a href="{{pathFor 'demo'}}">MyDemo</a></li>
+					{{#if currentuser}}
 					<li><a href="{{pathFor 'myprofile'}}">MyProfile</a></li>
+					{{/if}}
 					<li><a href="{{pathFor 'server'}}">IP Addresses</a></li>
 					<li><a href="{{pathFor 'people'}}">People</a></li>
 				</ul>
