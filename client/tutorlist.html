@@ -1,0 +1,17 @@
+<template name="tutorlist">
+	<table class="table table-striped table-hover">
+		<tbody>
+			{{#each tutors}}
+			  {{> tutorRow}}
+			{{/each}}
+		</tbody>
+	</table>
+</template>
+
+<template name="tutorRow">
+<tr>
+	<td>{{name}}</td>
+	<td>{{subject}}</td>
+	<td>{{email}}</td>
+</tr>
+</template>
