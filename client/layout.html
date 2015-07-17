@@ -1,7 +1,10 @@
 <template name="layout">
-{{> loginButtons}}
-<a href="{{pathFor 'TeacherProfilePage'}}"> Teacher Profile</a>
-<a href="{{pathFor 'tutorlist'}}"> Tutorlist</a>
-{{> yield}}
+	{{> loginButtons}}
+	{{#if currentUser}}
+		<a href="{{pathFor 'TeacherProfilePage'}}"> Teacher Profile</a>
+			<a href="{{pathFor 'tutorlist'}}"> Tutorlist</a>
 
+			{{> yield}}
+
+	{{/if}}
 </template>

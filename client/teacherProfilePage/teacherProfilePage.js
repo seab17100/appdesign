@@ -20,6 +20,7 @@
 				role:"tutor",
 				email:newEmail,
 		  		subject:newSubject,
+				rate:newAnswer,
 		  		createdAt: new Date(),
 		  		createdBy: myEmail,
 		  		user:Meteor.userId()};  // create the JSON object representing the quote
