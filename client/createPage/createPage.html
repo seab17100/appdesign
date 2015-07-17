@@ -1,0 +1,16 @@
+<template name="createPage">
+	<div>
+		<h1> Welcome to Instruct. Please select either student or teacher and then complete the following on the next page. On behalf of the Instruct team, we welcome you, and hope you will find this app helpful.</h1>
+		<html>
+			<body>
+				<form action="demo_form.asp" method="get">
+				  <input type="radio" name="person" value="student"> Student <br>
+				  	<a href="{{pathFor 'studentProfilePage'}}"> Student</a>
+				  <input type="radio" name="person" value="teacher"> Teacher<br>
+				  	<a href="{{pathFor  'TeacherProfilePage'}}"> Teacher</a>
+				  <input type="submit" value="Submit">
+				</form>
+			</body>
+		</html>
+	</div>
+</template>
