@@ -51,17 +51,25 @@ body {
     margin-right: -4px;
   }
   p.serif {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   text-align: justified;
-  padding-left: 700px;
-  padding-right: 700px;
+  padding-left: 350px;
+  padding-right: 350px;
   }
   p.sanserif {
-   font-family: "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   text-align: justified;
-  text-indent: 50px;
-  padding-left: 700px;
-  padding-right:700px; 
+  text-indent: 10px;
+  padding-left: 350px;
+  padding-right:350px; 
+  }
+    p.serif1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  text-align: justified;
+  text-indent: 0px;
+  padding-left: 350px;
+  padding-right:350px; 
   }
