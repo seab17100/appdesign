@@ -1,21 +1,48 @@
 <template name="layout">
-	<div class="nav">
+{{#if currentUser}}
+<div class="container">
 
-    <div class="nav">
-      <ul>
-        <li class="About"><a class="active" href="#">Manifesto</a></li>
-        <li class="Tutors"><a href="#">Tutors</a></li>
-    <li class="News"><a href="#">About</a></li>
-        <li class="Hopkins Culture"><a href="#">Culture</a></li>
-        <li class="Sports"><a href="#">Sports</a></li>
-        <li class="Lunch"><a href="#">Lunch</a></li>
-    <li class="New Students"><a href="#">Students</a></li>
-    <li class="Q.O.T.W"><a href="#">Q.O.T.W</a></li>
-      </ul>
-    </div>
-{{> loginButtons}}
-<a href="{{pathFor 'TeacherProfilePage'}}"> Teacher Profile</a>
-<a href="{{pathFor 'tutorlist'}}"> Tutorlist</a>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="{{pathFor 'welcome'}}"><b>Instruct</b></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+		          <li class="About"><a class="active" href="{{pathFor 'homepage'}}">Manifesto</a></li>
+				  <li><a href="{{pathFor 'TeacherProfilePage'}}"> Teacher Profile</a></li>
+				  <li><a href="{{pathFor 'tutorlist'}}"> Tutorlist</a></li>
+				  <!--
+		          <li class="Tutors"><a href="#">Tutors</a></li>
+		     	 <li class="News"><a href="#">About</a></li>
+		          <li class="Hopkins Culture"><a href="#">Culture</a></li>
+		          <li class="Sports"><a href="#">Sports</a></li>
+		          <li class="Lunch"><a href="#">Lunch</a></li>
+		      <li class="New Students"><a href="#">Students</a></li>
+		      <li class="Q.O.T.W"><a href="#">Q.O.T.W</a></li>
+					  -->
+	      </ul>
+		  <ul class="nav navbar-nav navbar-right">
+        	  <li>{{> loginButtons}}</li>
+		  </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	
+
+
 {{> yield}}
 </div>
+{{else}}
+{{> loginButtons}}
+{{/if}}
 </template>
