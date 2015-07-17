@@ -1,13 +1,26 @@
 <template name="TeacherProfilePage">					
 	<form id="newquote">	
-		<input type="text" class="quote" id="newauthor" placeholder="Enter your name"  name="author"/><br>
-		
-		<input type="text" class="quote" id="newsubject" placeholder= "Subject to tutor" name="subject"/><br>
-		<input type="text" class="quote" id="newanswer" placeholder="Price per hour" name="answer"/><br>
-		
-		<textarea id="newquotetext">Bio</textarea>
-		<input type="submit">	
+		<input type="text" class="quote col-lg-3" id="newauthor" placeholder="Enter your name."  name="author"/><br>
+		<!-- Input field for teacher name -->
+		<br>
+		<input type="text" class="quote col-lg-3" id="newsubject" placeholder= "Subject you will tutor in." name="subject"/>
+		<br>
+		<br>
+		<!-- Input field for subjects. NEEDS TO BE REMOVED -->
+		<input type="text" class="quote col-lg-3" id="newanswer" placeholder="Price per hour." name="answer"/>
+		<br>
+		<br>
+		<!-- Input field for price per hour. -->
+		<textarea id="newquotetext" class="quote col-lg-3" placeholder="Your biography."></textarea>
+		<!-- Input field for tutor bio. -->
+		<br>
+		<br>
+		<br>
+		<input type="submit" class="button btn-sm col-lg-3 btn-success">
+		<!-- Submit button -->
+		<br>
+		<br>
+
 	</form>		
-	
 	{{>subjects}}
 </template>
