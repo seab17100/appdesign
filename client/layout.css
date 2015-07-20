@@ -5,10 +5,10 @@
 .navbar a{
 	color: #ffffff;
 }
+.topLinks li a:visited, .topLinks li a:link, .topLinks li a:hover, .topLinks li a:active{
+	color: white;
+}
 .navbar-nav > li:hover{
 	background-color: #2ecc71;
 	color:#ffffff;
-}
-.topLinks li a:visited, .topLinks li a:link, .topLinks li a:hover, .topLinks li a:active{
-	color: white;
 }
