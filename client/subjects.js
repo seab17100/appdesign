@@ -1,7 +1,9 @@
 var subjects = [
 	{subject:'Language'},
-	{subject:'Elementary maths'},
-	{subject:'Algebra I&II'},
+
+	{subject:'Elementary Math'},
+	{subject:'Algebra I + II'},
+
 	{subject:'Geometry'},
 	{subject:'Trigonometry'},
 	{subject:'Pre-calculus'},
