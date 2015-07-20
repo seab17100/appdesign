@@ -1,0 +1,15 @@
+<template name="subjects">
+	Choose your subjects from this list...
+	<form>
+	<center>
+		{{#each subjectList}}
+			{{> subjectLine}}
+		{{/each}}
+	</center>
+	<!--<input type="submit">-->
+</form>
+</template>
+
+<template name="subjectLine">
+  <li><input type="checkbox" id="{{subject}}"> {{subject}}</li>
+</template>
