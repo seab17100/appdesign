@@ -1,3 +1,4 @@
+
   Template.TeacherProfilePage.events({
 	  'submit #newquote': function(event){ 
 		  // read the author and quote text from the browser window
@@ -35,3 +36,4 @@
 	  }
   	
   })
+

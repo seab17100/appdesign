@@ -1,7 +1,9 @@
 var subjects = [
 	{subject:'Language'},
+
 	{subject:'Elementary Math'},
 	{subject:'Algebra I + II'},
+
 	{subject:'Geometry'},
 	{subject:'Trigonometry'},
 	{subject:'Pre-calculus'},
@@ -19,5 +21,5 @@ var subjects = [
 	{subject:'Music Theory'}]
 
 Template.subjects.helpers({
-	subjectList:subjects
-})
+	subjectList: subjects
+});
