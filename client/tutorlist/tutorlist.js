@@ -1,5 +1,10 @@
 Template.tutorlist.helpers({
-	tutors: function(){return Profiles.find({},{sort:{createdAt:-1}});}
+	tutors: function(){
+		var online = Presences.find().fetch();
+		var onlineProfiles =
+		  _.map(online,function(x){return Profiles.findOne({user:x.userId})})
+
+		return _.filter(onlineProfiles,function(p){return p!=undefined});}
 })
 
 Template.tutorRow.events({
