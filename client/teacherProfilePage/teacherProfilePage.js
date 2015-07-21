@@ -5,13 +5,13 @@
 		  event.preventDefault();
 		  var newQuoteText = $("#newquotetext").val();	
 		  var newAuthor = $("#newauthor").val();
-
+		  var newResponse = $("#newresponse").val();
 		  var newSubject  = $("#newsubject").val();
 		  var newAnswer = $("#newanswer").val();
 		  var myEmail = Meteor.user().emails[0].address;
 		  // and erase the fields so the user can add another quote later
 		  $("#newauthor").val("");	
-				
+		  $("newauthor").val("");
 		  $("#newquotetext").val("");	
 		  $("#newsubject").val("");					
 		  $("newanswer").val("");
@@ -37,3 +37,4 @@
   	
   })
 
+9
