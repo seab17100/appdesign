@@ -1,6 +1,7 @@
 
   Template.TeacherProfilePage.events({
 	  'submit #newquote': function(event){ 
+		  console.log("submiting profile");
 		  // read the author and quote text from the browser window
 		  event.preventDefault();
 		  var newQuoteText = $("#newquotetext").val();	
@@ -27,6 +28,7 @@
 		  		createdAt: new Date(),
 		  		createdBy: myEmail,
 		  		user:Meteor.userId()};  // create the JSON object representing the quote
+			console.dir(profile);
 		  if (newQuoteText.trim()!= "") 
 		  	Profiles.insert(profile); 
 		  else{
