@@ -8,11 +8,10 @@
 .topLinks li a:visited, .topLinks li a:link, .topLinks li a:hover, .topLinks li a:active{
 	color: white;
 }
-.navbar-nav > li:hover{
+.navbar-nav> li:hover{
 	background-color: #2ecc71;
 	color:#ffffff;
 }
-
 
 
 
@@ -22,4 +21,12 @@
 	-webkit-border-radius: 70px;
 	-moz-border-radius:70px;
 	-khtml-border-radius:70px;
+}
+
+#pleaseLogin {
+	font-size:45pt;
+}
+
+.textBigger{
+	font-size: 150%;
 }

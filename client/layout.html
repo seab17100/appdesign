@@ -12,12 +12,13 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="{{pathFor 'welcome'}}"><b>Instruct</b></a>
+	      
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
+	      		<li> <a class="navbar-brand topLinks" href="{{pathFor 'welcome'}}"><b>Instruct</b></a> </li>
 		          <li class="About"><a class="active" href="{{pathFor 'homepage'}}">Manifesto</a></li>
 				  <li><a href="{{pathFor 'TeacherProfilePage'}}"> Tutor Signup</a></li>
 				  <li><a href="{{pathFor 'tutorlist'}}"> Tutorlist</a></li>
@@ -45,6 +46,11 @@
 {{> yield}}
 </div>
 {{else}}
+
+<br>
+<div id="pleaseLogin" class="text-center">
+	<img src="/photos/instructlogo_5.jpg" width="100%">
 {{> loginButtons}}
+</div>
 {{/if}}
 </template>
