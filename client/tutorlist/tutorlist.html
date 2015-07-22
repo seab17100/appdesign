@@ -13,14 +13,15 @@
 				<td>subject</td>
 				<td>email</td>
 				<td>desc</td>
-				<td>rate</td>
+				<td>price($/hr)</td>
+				
 			</tr>
 		</thead>
 		<tbody>
 			{{#each tutors}}
 			  {{> tutorRow}}
 			{{/each}}
-		</tbody>
+		</tbody>  
 	</table>
 </template>
 
@@ -30,7 +31,7 @@
 	<td>{{subject}}</td>
 	<td>{{email}}</td>
 	<td>{{desc}}</td>
-	<td>{{rate}}</td>
+	<td>{{price}}</td>
 	<td><button class="delete">delete</button></td>
 </tr>
 </template>

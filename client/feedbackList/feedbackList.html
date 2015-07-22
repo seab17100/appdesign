@@ -1,0 +1,29 @@
+<template name="feedbackList">
+	<h1>Feedback Given By Users</h1>
+		<div>
+			<table  class="table table-striped" id="feedbacktable">
+				<tbody>
+				{{#each newfeedback}}
+				{{> feedbackLine}}
+				{{/each}}					
+				</tbody>
+			</table>			
+		</div>
+</template>
+
+
+
+<template name="feedbackLine">
+	<tr>
+		<td>		
+			<p class="authorname text-center">{{authorname}}</p>		
+		</td>
+		<td>
+			{{feedback}} 
+		</td>
+		<td>
+		 {{createdAt}}
+		 </td>	
+	</tr>
+	
+</template>

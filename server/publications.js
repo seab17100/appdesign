@@ -23,3 +23,4 @@ Meteor.publish('userPresence', function() {
   return Presences.find(filter, { fields: { state: true, userId: true }});
 });
 
+Meteor.publish("theFeedback", function(){return Feedback.find();})
