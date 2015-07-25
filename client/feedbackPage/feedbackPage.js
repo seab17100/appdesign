@@ -11,7 +11,7 @@ Template.feedbackPage.events({
 		  var authorname = Meteor.user().emails[0].address;
 		  var feedback = {authorname:authorname,feedback:newAnswer,createdAt:new Date()};	
 		  Feedback.insert(feedback);	
-		  Router.go("homepage")
+		  Router.go("feedbackresponse")
 	}
 })
 
