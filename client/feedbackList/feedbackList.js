@@ -4,7 +4,12 @@ Template.feedbackList.helpers({
 		return  Feedback.find({},{
 			sort:{createdAt:-1}
 		})
+		
+		/*'click button.delete': function(event){
+		  Quotes.remove(this._id);
+		},*/
 	}
+
 });
 
 
