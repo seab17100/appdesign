@@ -12,3 +12,11 @@ Template.tutorRow.events({
 		Profiles.remove(this._id);
 	}
 })
+
+Template.quoteLine.helpers({
+
+  isOwner: function(){
+  	    return (this.user == Meteor.userId()) || (Meteor.userId()=="79ECyD4M2ek4Ffwtj");
+    
+  }
+})

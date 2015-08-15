@@ -11,7 +11,7 @@
 		  var newAnswer = $("#newanswer").val();
 		  var myEmail = Meteor.user().emails[0].address;
 		  // and erase the fields so the user can add another quote later
-		  $("#newauthor").val("");	
+		  $("#newresponse").val("");	
 		  $("newauthor").val("");
 		  $("#newquotetext").val("");	
 		  $("#newsubject").val("");					
@@ -24,7 +24,8 @@
 				role:"tutor",
 				email:myEmail,
 		  		subject:newSubject,
-				rate:newAnswer,
+		  		price:newAnswer,
+		  		location:newResponse,
 		  		createdAt: new Date(),
 		  		createdBy: myEmail,
 		  		user:Meteor.userId()};  // create the JSON object representing the quote
